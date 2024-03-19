@@ -1,0 +1,204 @@
+/*    Font Variable
+----------------------*/
+// @mont:'Montserrat', sans-serif;
+// @mol:'MontserratLight', sans-serif;
+$mont: 'Poppins', sans-serif;
+$mol: 'Poppins', sans-serif;
+/*    Color Variable
+-----------------------*/
+$color_main: #333333;
+$color_sub_main_48: #484848;
+$color_sky_blue: #3961fb;
+$color_blue_black: #262637;
+$color_444: #444;
+$color_666: #666;;
+$border: #f2f2f2;
+
+/*    Base Color
+------------------*/
+$success: #00c853; //03A9F5 //26DAD2
+$info: #26c6da;
+$primary: #4680ff; //00b0ff 4680ff #2196F3-bt4
+$warning: #ffb64d;
+$danger: #fb3a3a; //#fb3a3a #fc6180
+
+$success-dark: #43a047;
+$info-dark: #0097a7;
+$primary-dark: #0095e1;
+$warning-dark: #e7b63a;
+$danger-dark: #e63327;
+$border_e5: #E5E5E5;
+/*    Mau chu
+------------------*/
+$text-title: #333;
+$text-title-sub: #666;
+$text-des: rgba(0, 0, 0, 0.5);
+$text-error: #e63327;
+/*    Border
+------------------*/
+$border: #ddd;
+/*    Button
+------------------*/
+$blue-dark: #0054ec;
+
+$pink: #f73859;
+$pink-dark: #e11f5f;
+$purple: #48509a;
+$purple-dark: #40488a;
+$gray: #f6f7f9;
+$gray-dark: #dddee0;
+/*    Extends Color
+------------------*/
+
+$aqua: #8b91dd;
+$black-gray: #333;
+$dark: #10195d;
+//$default: #fff;
+$inverse: #666;
+//$default: #555;
+$muted: #909090;
+$text: #333; //455a64
+$text-light: #888; //99abb4
+$border: #e4e7ec;
+/*    Solid Color
+------------------*/
+$white: #fff;
+$white-light: #eef5f9;
+$black: #252525;
+
+/*    Brand color
+----------------------*/
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #cd201f;
+$google-plus: #dd4b39;
+$linkedin: #007bb6;
+/*    Background
+----------------------*/
+$bg-success: #26dad2;
+$bg-info: #1976d2;
+$bg-primary: #48509a; //4a4d8a #8b91dd
+$bg-warning: #ffb22b;
+$bg-danger: #ef5350;
+$bg-purple: #7460ee;
+$bg-theme: #1976d2;
+$bg-inverse: #2f3d4a;
+$bg-gray: #ccc;
+$bg-blue-dark: #10195d;
+$bg-pink: #ee4c81;
+
+$main-text: #252525;
+$main-text-sub: #484848;
+$background-main: #fafafa;
+//==========Button có hover==========//
+$btn-colors: () !default;
+$btn-colors: map-merge(
+                (//background, color, color-border | Hover tg tự
+                        "btn-blue": ($color_sky_blue, $white, transparent, $blue-dark, $white, transparent),
+                        "btn-pink": ($pink, $white, transparent, $pink-dark, $white, transparent),
+                        "btn-purple": ($purple, $white, transparent, $purple-dark, $white, transparent),
+                        "btn-gray": ($gray, #666, transparent, $gray-dark, #666, transparent),
+                        //"btn-default": ($white, $pink, $pink, $pink, $white, $pink),
+                        "btn-trans": (transparent, $white, $white, $white, $pink, $white),
+                        "btn-white": ($white, $main-text-sub, $white, $white, $pink, $white),
+                ),
+                $btn-colors
+);
+//==========Button outline hover==========//
+$btn-color-outlines: () !default;
+$btn-color-outlines: map-merge(
+                (//color-main, color-text
+                        "btn-pink": ($pink, $white),
+                        "btn-purple": ($purple, $white),
+                        "btn-gray": ($gray, $white),
+                        "btn-white": (#666, #ddd),
+                ),
+                $btn-color-outlines
+);
+//==========Button ko có hover==========//
+$btn-not-hover: () !default;
+$btn-not-hover: map-merge(
+                (//background, color
+                        "btn-pink": ($pink, $white, $pink),
+                        "btn-purple": ($purple, $white, $purple),
+                        "btn-gray": ($gray, $pink, $gray),
+                        "btn-default": ($white, $pink, $pink),
+                        "btn-white": ($white, #333, #eee),
+                ),
+                $btn-not-hover
+);
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "dark": $dark
+                ),
+                $theme-colors
+);
+$badge-colors: () !default;
+$badge-colors: map-merge(
+                (
+                        "purple": $purple,
+                        "inverse": $inverse
+                ),
+                $theme-colors
+);
+$label-colors: () !default;
+$label-colors: map-merge(
+                (
+                        "white": $white,
+                ),
+                $badge-colors
+);
+$text-colors: () !default;
+$text-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "muted": $muted,
+                        "pink": $pink,
+                        "black": $black,
+                        "purple": $purple,
+                ),
+                $text-colors
+);
+$bg-colors: () !default;
+$bg-colors: map-merge(
+                (
+                        "bg-primary":$bg-primary,
+                        "bg-success":$bg-success,
+                        "bg-info":$bg-info,
+                        "bg-warning":$bg-warning,
+                        "bg-danger":$bg-danger,
+                        "bg-theme":$bg-theme,
+                        "bg-inverse":$bg-inverse,
+                        "bg-purple":$bg-purple,
+                        "bg-gray":$bg-gray,
+                        "bg-blue-dark":$bg-blue-dark,
+                        "bg-pink":$bg-pink,
+                        "bg-white":$white,
+                ),
+                $bg-colors
+);
+
+$color_main: #252525;
+$pink: #f73859;
+$blue: #3961fb;
+$color_333: #333333;
+$color_555: #555555;
+$color_666: #666;
+$color_48: #484848;
+$color_999: #999999;
+$color_border_f2: #f2f2f2;
+$color_bg_f2: #F5F5F5;
+$color_modal_f0: #F0F0F0;
+
+$color_job_active: #42B72A;
+$color_job_stop: #C00000;

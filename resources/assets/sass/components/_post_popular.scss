@@ -1,0 +1,166 @@
+.popular-posts{
+    margin-top: 20px;
+    .section-title{
+        font-size: 22px;
+        margin: 0 0 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .posts-listing{
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        .col-item{
+            flex: 1 1 50%;
+            max-width: 49%;
+            width: 100%;
+            padding: 0 10px;
+            margin-bottom: 20px;
+            display: flex;
+
+            background-color: #fff;
+            border: 1px solid #d6d6d6;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            padding: 10px;
+            &__image{
+                flex: 1 1 46%;
+                max-width: 46%;
+                position: relative;
+                overflow: initial;
+                .a-img{
+                    display: block;
+                    height: 170px;
+                    position: relative;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 3px;
+                    }
+                }
+                .images-number {
+                    position: absolute;
+                    bottom: 12px;
+                    left: 10px;
+                    background: rgba(0,0,0,.5);
+                    color: #fff;
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    pointer-events: none;
+                }
+                .post-save {
+                    position: absolute;
+                    bottom: 7px;
+                    right: 0;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1;
+                    cursor: pointer;
+                    >i{
+                        height: 22px;
+                        background: url('/images/love.png') center no-repeat;
+                        background-size: contain;
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+                .chothuenhanh-label {
+                    width: 70px;
+                    height: 70px;
+                    pointer-events: none;
+                    background: url('/images/chothuenhanh-label.png') center no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    top: -6px;
+                    left: -6px;
+                    z-index: 2;
+                }
+            }
+            &__info{
+                flex-grow: 1;
+                margin-left: 10px;
+                position: relative;
+                .post-title{
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin: 0 0 10px;
+                    >a{
+                        text-decoration: none;
+                        display: block;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #E13427;
+                        padding-right: 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .star.star-5 {
+                        width: 70px;
+                        height: 17px;
+                    }
+                    .star {
+                        width: 14px;
+                        height: 17px;
+                        background: url('/images/star2.png') left center repeat-x;
+                        background-size: 14px 14px;
+                        display: inline-block;
+                        margin-right: 3px;
+                        float: left;
+                    }
+                }
+                .post-title, .post-price, .post-acreage, .post-location, .post-time{
+                    margin-bottom: 7px;
+                    margin-right: 20px;
+                }
+                .post-price{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #16c784;
+                }
+                .post-time{
+                    color: grey;
+                }
+                .fz-13{
+                    font-size: 13px;
+                }
+                .post-hot{
+                    width: 25px;
+                    height: 25px;
+                    display: block;
+                    background: url('/images/hot.svg') center no-repeat;
+                    background-size: 100%;
+                    pointer-events: none;
+                    z-index: 1;
+                    position: absolute;
+                    top: 0;
+                    right: -5px;
+                }
+            }
+            &:nth-of-type(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .popular-posts{
+        .posts-listing{
+            .col-item{
+                flex: 1 1 100%;
+                max-width: 100%;
+                margin-right: 0;
+                &__image{
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+            }
+        }
+    }
+}

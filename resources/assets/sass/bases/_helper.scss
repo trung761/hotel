@@ -1,0 +1,164 @@
+/*   margin top  */
+$i: 0;
+@while $i <= 30 {
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   margin bottom  */
+$i: 0;
+@while $i <= 30 {
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   margin right  */
+$i: 0;
+@while $i <= 30 {
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   margin left  */
+$i: 0;
+@while $i <= 30 {
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   padding top  */
+$i: 5;
+@while $i <= 30 {
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   padding bottom  */
+$i: 5;
+@while $i <= 30 {
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   padding right  */
+$i: 5;
+@while $i <= 30 {
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/*   padding left  */
+$i: 5;
+@while $i <= 30 {
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  $i: ($i + 5);
+}
+/* Width percentage*/
+$i: 5;
+@while $i <= 100 {
+  .w-#{$i} {
+    width: #{$i}#{'%'};
+    max-width: #{$i}#{'%'};
+  }
+  $i: ($i + 5);
+}
+.w100 {width: 100px;}
+.mw-100 {max-width: 100px;}
+.mw-150 {max-width: 150px;}
+.mw-200 {max-width: 200px;}
+.mw-250 {max-width: 250px;}
+.mw-80p {max-width: 80%;}
+/*Flex*/
+.flex {display: flex;}
+.justify-center {justify-content: center;}
+.justify-end {justify-content: flex-end;}
+.justify-between {justify-content: space-between;}
+.align-start {align-items: start;}
+.align-center {align-items: center;}
+.self-center { align-self: center;}
+.self-end { align-self: flex-end;}
+.align-end {align-items: flex-end;}
+.direction-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap}
+/*Padding*/
+.no-padding {padding: 0 !important;}
+.no-pad-left {padding-left: 0 !important;}
+.no-pad-right {padding-right: 0 !important;}
+/*Margin*/
+.no-margin {margin: 0 !important;}
+.no-margin-r {
+  margin-right: 0 !important;
+}
+/*Border*/
+.no-border {border: 0 !important;}
+/*Text*/
+.text-left {text-align: left !important;}
+.text-center {text-align: center !important;}
+.text-right {text-align: right !important;}
+.text-through {text-decoration: line-through;}
+.text-xs {font-size: 11px !important;}
+.text-sm {font-size: 13px !important;}
+.text-md {font-size: 14px !important;}
+.text-lg {font-size: 16px !important;}
+.text-hint {
+  color: #888;
+  font-size: 13px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.text-gray {color: #888;}
+
+.hide {display: none}
+.show {display: inline-block;}
+.d-inline {display: inline-block;}
+.d-block {display: block;}
+.d-flex {display: flex;}
+.p-relative {position: relative;}
+.p-absolute {position: absolute;}
+.clearfix {clear: both; display: table;}
+.flex-md-column {
+    flex-direction: column;
+}
+.text-collapse {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.no-scroll {
+  overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hide-sm {
+    display: none !important;
+  }
+  .show-sm {
+    display: block !important;
+  }
+}
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: inline-block;
+}
+.anhdaidien-candidate{
+    padding: 5px;
+    object-fit: contain;
+    display: inline-block;
+    overflow: hidden;
+    img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+}

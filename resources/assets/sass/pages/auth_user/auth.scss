@@ -1,0 +1,76 @@
+// Base
+@import "../../bases/reset";
+@import "../../bases/font";
+@import "../../bases/variables";
+@import "../../bases/base";
+@import "../../bases/card";
+@import "../../bases/grid";
+@import "../../bases/button";
+@import "../../bases/helper";
+@import "../../bases/form";
+@import "../../bases/table";
+@import "../../bases/text";
+@import "../../bases/common";
+
+// Plugin
+@import "../../icon/font-awesome/scss/font-awesome";
+@import "../../icon/line-awesome/scss/line-awesome";
+
+// Component global
+@import "../../components/header/header_default";
+@import "../../components/footer/footer_default";
+
+// Components
+@import "../../components/whyus";
+@import "../../components/support";
+
+@import "toastr";
+
+//Include
+.b-auth{
+    padding: 30px 30px 100px;
+    max-width: 600px;
+    margin: 0 auto;
+    .auth-header{
+        .title{
+            margin-bottom: 15px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+    .auth-content{
+        .form-group{
+            label{
+                text-transform: uppercase;
+            }
+            .form-control{
+                background-color: #e8f0fe;
+                height: 45px;
+            }
+            .btn-submit{
+                width: 100%;
+                height: 45px;
+            }
+            &.form-group-register{
+                >p{
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    a{
+        color: #007aff;
+        &:hover{
+            color: #f80;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .b-auth{
+        padding: 20px 20px 100px;
+        a{
+            text-decoration: underline;
+        }
+    }
+}
