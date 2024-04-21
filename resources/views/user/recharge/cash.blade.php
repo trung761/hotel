@@ -14,11 +14,11 @@
             </li>
             <li>
                 <a href="">
-                    <span>Phòng</span>
+                    <span>Nạp tiền</span>
                 </a>
             </li>
             <li>
-                <span>Danh sách</span>
+                <span>Tiền mặt</span>
             </li>
         </ol>
     </section>
@@ -30,16 +30,21 @@
             border-color: #ffeeba;
         }
     </style>
-    <div class="alert alert-warning" role="alert">
-        <h3 class="mt-4">Thanh toán tại văn phòng công ty</h3>
-        <p>Bạn vui lòng đến địa chỉ văn phòng công ty TBN Hostel theo địa chỉ sau:</p>
-        <p>188 Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</p>
-        <p>Số điện thoại: 0949083414</p>
-        <h3 class="mt-5">Thu tiền tận nơi</h3>
-        <p>Áp dụng cho khu vực Tp.Cần Thơ và số tiền thanh toán lớn hơn 500.000đ</p>
-        <p>Liên hệ: 0949083414 để chúng tôi hỗ trợ bạn</p>
-        <p>Xin cảm ơn!</p>
+    <div class="setup_tienmat">
+        <div class="alert alert-warning" role="alert">
+            <h3 class="mt-4">Thanh toán tại văn phòng công ty</h3>
+            <p>Bạn vui lòng đến địa chỉ văn phòng công ty TBN Hostel theo địa chỉ sau:</p>
+            <p>188 Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</p>
+            <p>Số điện thoại: 0949083414</p>
+            <h3 class="mt-5">Thu tiền tận nơi</h3>
+            <p>Áp dụng cho khu vực Tp.Cần Thơ và số tiền thanh toán lớn hơn 500.000đ</p>
+            <p>Liên hệ: 0949083414 để chúng tôi hỗ trợ bạn</p>
+            <p>Xin cảm ơn!</p>
+        </div>
     </div>
+        
+    
+    
 @stop
 
 @push('script')

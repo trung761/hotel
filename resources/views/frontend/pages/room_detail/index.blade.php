@@ -47,7 +47,7 @@
                         </p>
                     </div>
                 @endif
-                <div class="card-body breadcrumb">
+                <div style="padding:0" class="card-body breadcrumb">
                     <ol>
                         @if (isset($room->category->ten))
                             <li>

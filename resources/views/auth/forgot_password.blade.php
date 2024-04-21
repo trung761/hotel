@@ -17,7 +17,7 @@
                 <input type="text" class="form-control" require placeholder="" name="email">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-blue btn-submit" style="background-color: #102136"> Xác
+                <button type="submit" class="btn btn-blue btn-submit" style="background-color: var(--primary-color)"> Xác
                     nhận</button>
             </div>
         </form>

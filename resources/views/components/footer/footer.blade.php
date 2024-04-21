@@ -13,7 +13,7 @@
                         triệu</strong> lượt xem mỗi tháng</p>
             </div>
             <div class="footer-col">
-                <span class="footer-col-title">Về HOSTELCANTHO.COM</span>
+                <span class="footer-col-title">Về CANTHOHOSTEL.COM</span>
                 <ul class="footer-menu">
                     <li><a href="#">Trang chủ</a></li>
                     <li><a rel="nofollow" href="#">Giới thiệu</a></li>
@@ -74,3 +74,6 @@
         </div>
     </div>
 </footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="cantho_hostel" agent-id="72e6d912-87c5-40fa-827d-8465000251a6"
+    language-code="en" style="z-index: 9999; bottom: 66px !important;" class="chat_box" ></df-messenger>

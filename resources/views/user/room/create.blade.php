@@ -22,11 +22,14 @@
             </li>
         </ol>
     </section>
-    <h1 class="page-title-h1">Thêm mới <a href="{{ route('get_user.room.index') }}" title="Thêm mới">Trở về</a></h1>
-    <div class="alert alert-danger mb-5" role="alert">
-        Nếu bạn đã từng đăng tin trên phongtrocanthocom, hãy sử dụng chức năng ĐẨY TIN / GIA HẠN / NÂNG CẤP VIP trong mục
-        QUẢN LÝ TIN ĐĂNG để làm mới, đẩy tin lên cao thay vì đăng tin mới. Tin đăng trùng nhau sẽ không được duyệt.
+    <h1 class="page-title-h1">Thêm mới</h1>
+    <div class="setup_discript">
+        <div class="alert alert-danger mb-5" role="alert">
+            Nếu bạn đã từng đăng tin trên phongtrocanthocom, hãy sử dụng chức năng ĐẨY TIN / GIA HẠN / NÂNG CẤP VIP trong mục
+            QUẢN LÝ TIN ĐĂNG để làm mới, đẩy tin lên cao thay vì đăng tin mới. Tin đăng trùng nhau sẽ không được duyệt.
+        </div>
     </div>
+    
     @include('user.room.form')
 
 @stop

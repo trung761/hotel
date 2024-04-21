@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-<div class="b-auth">
+<div style="" class="b-auth box_shadow">
     <div class="auth-header">
         <h1 class="title" style="text-align: center;">Đăng nhập</h1>
     </div>
@@ -27,7 +27,7 @@
                 @endif
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-blue btn-submit" style="background-color: #102136;">Đăng
+                <button type="submit" class="btn btn-blue btn-submit" style="background-color: var(--primary-color);">Đăng
                     nhập</button>
             </div>
             <div class="form-group">

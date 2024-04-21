@@ -5,6 +5,7 @@
 @endpush
 
 @section('content')
+
     <section class="breadcrumb container">
         <ol>
             <li>
@@ -22,12 +23,15 @@
             </li>
         </ol>
     </section>
-    <h1 class="page-title-h1">Thêm mới <a href="{{ route('get_user.room.index') }}" title="Thêm mới">Trở về</a></h1>
-    <div class="alert alert-danger mb-5" role="alert">
-        Nếu bạn đã từng đăng tin trên phongtrocantho.vn, hãy sử dụng chức năng ĐẨY TIN / GIA HẠN / NÂNG CẤP VIP trong mục
-        QUẢN
-        LÝ TIN ĐĂNG để làm mới, đẩy tin lên cao thay vì đăng tin mới. Tin đăng trùng nhau sẽ không được duyệt.
+    <div class="setup_post">
+        <h1 class="page-title-h1" style="padding:0">Thêm mới <a href="{{ route('get_user.room.index') }}" title="Thêm mới">Trở về</a></h1>
+        <div class="alert alert-danger mb-5" role="alert">
+            Nếu bạn đã từng đăng tin trên phongtrocantho.vn, hãy sử dụng chức năng ĐẨY TIN / GIA HẠN / NÂNG CẤP VIP trong mục
+            QUẢN
+            LÝ TIN ĐĂNG để làm mới, đẩy tin lên cao thay vì đăng tin mới. Tin đăng trùng nhau sẽ không được duyệt.
+        </div>
     </div>
+    
     @include('user.room.form')
 
 @stop

@@ -6,7 +6,8 @@
         min-height: 200px;
     }
     </style>
-    <div class="form-room container">
+    <div class="setup_post">
+    <div style="padding:0" class="form-room container">
         <div class="room-left">
             <h4>Địa chỉ cho thuê</h4>
             <div class="row-lists">
@@ -186,6 +187,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </form>
 
 <script>

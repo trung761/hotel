@@ -11021,3 +11021,14 @@ $(function () {
 
 /******/ })()
 ;
+
+const mb_bars = document.getElementById('mobile_header_bars');
+const content_mb_bars_body = document.body;
+const content_mb_bars_mobile_panel = document.querySelector('.mobile-panel');
+const content_mb_bars_panel_backdrop  = document.querySelector('.panel-backdrop');
+
+mb_bars.addEventListener('click', function() {
+	content_mb_bars_body.classList.toggle('body-mb-active');
+	content_mb_bars_mobile_panel.classList.toggle('mobile-panel-active')
+	content_mb_bars_panel_backdrop.classList.toggle('backdrop-active')
+});

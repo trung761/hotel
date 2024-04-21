@@ -2445,7 +2445,7 @@ i {
 
 .navbar-menu {
   width: 100%;
-  background: #102136;
+  background: var(--primary-color);
 }
 .navbar-menu-container {
   display: flex;
@@ -2539,7 +2539,7 @@ i {
   }
 }
 .footer {
-  background-color: #102136;
+  background-color: var(--primary-color);
   color: #fff;
 }
 .footer .footer-content .footer-nav {
@@ -2688,7 +2688,7 @@ i {
 #searchbar .searchform .search_field {
   display: flex;
   justify-content: space-between;
-  background-color: #102136;
+  background-color: var(--primary-color);
   padding: 20px;
   color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -3178,7 +3178,7 @@ i {
 }
 .whyus-sp-item {
   padding: 2rem 1rem 1rem 1rem;
-  color: #102136;
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3198,8 +3198,8 @@ i {
   font-weight: 700;
 }
 .whyus-btn-contact {
-  background-color: #102136;
-  border: 1px solid #102136;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: #fff;
   font-size: 16px;
   padding: 10px 20px;
@@ -3210,7 +3210,7 @@ i {
 }
 .whyus-btn-contact:hover {
   background-color: transparent;
-  color: #102136;
+  color: var(--primary-color);
 }
 
 @media (max-width: 767px) {

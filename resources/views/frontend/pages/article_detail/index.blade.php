@@ -34,7 +34,7 @@ $dataBreadcrumb = ['Trang chủ', 'Blog'];
                     </div>
                 </div>
             </div>
-            <div class="card b-blog">
+          <!--   <div class="card b-blog">
                 <div class="card-header">
                     <div class="cpn-heading">Có thể bạn quan tâm</div>
                 </div>
@@ -51,7 +51,7 @@ $dataBreadcrumb = ['Trang chủ', 'Blog'];
                         </a>
                         @endfor
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="sidebar sidebar-right">
             @include('frontend.components._inc_sidebar')

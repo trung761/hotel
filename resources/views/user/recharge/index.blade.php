@@ -14,7 +14,7 @@
         </li>
         <li>
             <a href="">
-                <span>Phòng</span>
+                <span>Nạp tiền</span>
             </a>
         </li>
         <li>

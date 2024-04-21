@@ -11252,3 +11252,35 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
+
+
+
+function copyToClipboard(elementId) {
+	var text = document.getElementById(elementId).innerText;
+	var tempInput = document.createElement("input");
+	tempInput.value = text;
+	document.body.appendChild(tempInput);
+	tempInput.select();
+	document.execCommand("copy");
+	document.body.removeChild(tempInput);
+	alert("Đã sao chép: " + text);
+}
+
+
+const mb_bars = document.getElementById('mobile_header_bars');
+const content_mb_bars_body = document.body;
+const content_mb_bars_mobile_panel = document.querySelector('.mobile-panel');
+const content_mb_bars_panel_backdrop  = document.querySelector('.panel-backdrop');
+
+mb_bars.addEventListener('click', function() {
+	content_mb_bars_body.classList.toggle('body-mb-active');
+	content_mb_bars_mobile_panel.classList.toggle('mobile-panel-active')
+	content_mb_bars_panel_backdrop.classList.toggle('backdrop-active')
+});
+
+
+
+
+
+
+

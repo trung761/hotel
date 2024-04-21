@@ -26,6 +26,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <meta name="theme-color" content="#712cf9">
     <style>
+    :root {
+    /* --primary-color: #002655;  #45c4be  #0a8066*/ 
+    --primary-color: #0a8066;  
+
+
+    /* --btn-primary-color: #0034fb; */
+    --btn-primary-color: #00abfd; 
+    }
     .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -78,7 +86,7 @@
     }
 
     .nav-header-bg {
-        background-color: #102136;
+        background-color: var(--primary-color);
     }
 
     tr:hover {
@@ -125,9 +133,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('get_admin.room.index') }}"
-                                title="Category">Phòng</a>
+                                title="Category">Tin đăng</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('get_admin.article.index') }}" title="Article">Bài
+                                viết</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('get_admin.recharge.index') }}"
                                 title="Category">Nạp
@@ -139,10 +150,7 @@
                                 title="Category">Thanh toán</a>
                         </li>
 
-                        <!-- <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ route('get_admin.article.index') }}" title="Article">Bài
-                                viết</a>
-                        </li> -->
+                      
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown js-drop-menu">

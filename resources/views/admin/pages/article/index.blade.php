@@ -17,9 +17,9 @@
         <tr>
             <th style="width: 20px;">#</th>
             <th style="width: 80px;">Avatar</th>
-            <th style="width: 65%;">Thông tin</th>
+            <th style="">Thông tin</th>
             <th style="width: 200px">Ngày tạo</th>
-            <th>Tuỳ chọn</th>
+            <th style="width: 100px">Tuỳ chọn</th>
 
         </tr>
     </thead>
@@ -29,18 +29,18 @@
             <td scope="row">{{ $item->id }}</td>
             <td scope="row">
                 <img src="{{ pare_url_file($item->anhdaidien) }}" alt=""
-                    style="display: block;width: 100px;height: auto;object-fit: cover;">
+                    style="display: block;width: 120px;height: 120px;object-fit: cover;">
             </td>
             <td scope="row">
                 <h5>{{ $item->ten }}</h5>
                 <p>{{ $item->mota }}</p>
             </td>
-            <td scope="row">{{ $item->created_at }}</td>
-            <td scope="row">
-                <a href="{{ route('get_admin.article.update', $item->id) }}" class="text-blue"><i
+            <td style="vertical-align: middle;" scope="row">{{ $item->created_at }}</td>
+            <td style="vertical-align: middle; " scope="row">
+                <a style="text-decoration: none" href="{{ route('get_admin.article.update', $item->id) }}" class="text-blue"><i
                         class="bi bi-pencil-square"></i> </a>
                 <a href="{{ route('get_admin.article.delete', $item->id) }}" class="text-danger"
-                    style="margin-left: 20px"><i class="bi bi-trash"></i></a>
+                    style="margin-left: 10px"><i class="bi bi-trash"></i></a>
             </td>
         </tr>
         @endforeach

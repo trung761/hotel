@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-<div class="b-auth">
+<div style="margin: 2rem auto;padding:20px;box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;" class="b-auth">
     <div class="auth-header">
         <h1 class="title" style="text-align: center;">Cập nhật thông tin</h1>
     </div>
@@ -44,7 +44,7 @@
                 @endif
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-blue btn-submit " style="background-color: #102136;">Cập nhật tài
+                <button type="submit" class="btn btn-blue btn-submit " style="background-color: var(--primary-color);">Cập nhật tài
                     khoản</button>
             </div>
         </form>

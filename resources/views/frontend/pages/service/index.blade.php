@@ -9,7 +9,7 @@
 <section class="grid post-category">
 
     <header class="page-header category clearfix">
-        <h1 class="page-h1" style="float: none; margin-top: 50px; margin-bottom: 30px; text-align: center; font-size:30px">Bảng giá
+        <h1 class="page-h1" style="float: none;  margin-bottom: 20px; text-align: center; font-size:30px">Bảng giá
         </h1>
     </header>
     <div class="section-content">

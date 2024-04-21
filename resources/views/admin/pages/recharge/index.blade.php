@@ -2,7 +2,8 @@
 @section('content')
 <h2 class="mt-3" style="display: flex;justify-content: space-between"><span>Danh sách nạp tiền</span> <a
         href="{{ route('get_admin.recharge.create') }}" style="font-size: 16px;">Thêm mới</a></h2>
-<table class="table table-hover">
+
+        <table class="table table-hover">
     <thead>
         <tr>
             <th>Mã giao dịch</th>

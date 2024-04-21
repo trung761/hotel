@@ -22,8 +22,10 @@
         </li>
     </ol>
 </section>
-<h1 class="page-title-h1">Lịch sử thanh toán</h1>
-<table class="table table-hover">
+<div class="setup_history_payment">
+<h1 style="padding: 10px 0" class="page-title-h1">Lịch sử thanh toán</h1>
+<div class="setup_mb_table">
+<table style="margin-bottom: 50px" class="table table-hover">
     <thead>
         <tr>
             <th style="text-align: left">Mã giao dịch</th>
@@ -61,6 +63,9 @@
         @endforeach
     </tbody>
 </table>
+</div>
+</div>
+
 @stop
 
 @push('script')

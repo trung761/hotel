@@ -25,8 +25,8 @@
 <div class="container">
     <h1 class="page-title-h1" style="display: flex;justify-content: space-between">Cho thuê phòng trọ, cho thuê nhà trọ,
         tìm
-        phòng trọ <a href="{{ route('get_user.room.create') }}" title="Thêm mới" class="btn btn-sm btn-blue"
-            style="background-color:#102136">Thêm tin
+        phòng trọ <a href="{{ route('get_user.room.create') }}" title="Thêm mới" class="btn btn-sm btn-blue mb_post"
+            style="background-color:var(--primary-color)">Thêm tin
             mới</a></h1>
 
     <span class="label label-success">{{Session::get('success')}}</span>
@@ -34,13 +34,13 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th style="width: 40px;text-align: center">ID</th>
-                    <th style="width: 100px;">Ảnh đại diện</th>
-                    <th style="width: 40%">Thông tin</th>
-                    <th style="text-align: center">Giá</th>
-                    <th style="text-align: center;width: 120px;">Ngày bắt đầu</th>
-                    <th style="text-align: center;width: 120px;">Ngày kết thúc</th>
-                    <th style="width: 120px;text-align: center">Trạng thái</th>
+                    <th style="width: 40px;text-align: center;vertical-align: middle;">ID</th>
+                    <th style="width: 100px;vertical-align: middle;">Ảnh đại diện</th>
+                    <th style="width: 40%;vertical-align: middle;">Thông tin</th>
+                    <th style="text-align: center;vertical-align: middle;">Giá</th>
+                    <th style="text-align: center;width: 120px;vertical-align: middle;">Ngày bắt đầu</th>
+                    <th style="text-align: center;width: 120px;vertical-align: middle;">Ngày kết thúc</th>
+                    <th style="width: 120px;text-align: center;vertical-align: middle;">Trạng thái</th>
                 </tr>
             </thead>
             <tbody>

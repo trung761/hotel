@@ -7,8 +7,6 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-
-
 .main-head {
     height: 150px;
     background: #FFF;
@@ -83,7 +81,7 @@ body {
 }
 </style>
 <div class="main">
-    <h2> ADMIN</h2>
+    <h2>ADMIN</h2>
     <div class="col-md-6 col-sm-12">
         <div class="login-form">
             <form method="POST">
@@ -97,7 +95,7 @@ body {
                     <input type="password" name="password" required class="form-control" placeholder="Password">
                 </div>
                 <button type="submit" class="btn btn-black" onclick="check()"
-                    style="background-color: #102136; width:100%">Login</button>
+                    style="background-color: var(--primary-color); width:100%">Login</button>
             </form>
         </div>
     </div>

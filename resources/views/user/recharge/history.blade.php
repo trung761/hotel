@@ -22,7 +22,9 @@
         </li>
     </ol>
 </section>
-<h1 class="page-title-h1">Lịch sử nạp tiền</h1>
+<div  style="margin-bottom: 50px" class="setup_history">
+<h1 style="padding:10px 0" class="page-title-h1">Lịch sử nạp tiền</h1>
+<div class="setup_mb_table">
 <table class="table table-hover">
     <thead>
         <tr>
@@ -66,6 +68,10 @@
         @endforeach
     </tbody>
 </table>
+</div>
+
+</div>
+
 @stop
 
 @push('script')
