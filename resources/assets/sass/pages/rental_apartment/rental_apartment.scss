@@ -1,0 +1,34 @@
+// Base
+@import "../../bases/reset";
+@import "../../bases/font";
+@import "../../bases/variables";
+@import "../../bases/base";
+@import "../../bases/card";
+@import "../../bases/grid";
+@import "../../bases/button";
+@import "../../bases/helper";
+@import "../../bases/form";
+@import "../../bases/table";
+@import "../../bases/text";
+@import "../../bases/common";
+
+// Plugin
+@import "../../icon/font-awesome/scss/font-awesome";
+@import "../../icon/line-awesome/scss/line-awesome";
+
+// Component global
+@import "../../components/header/header_default";
+@import "../../components/footer/footer_default";
+
+// Components
+@import "../../components/searchbar";
+@import "../../components/breadcrumb";
+@import "../../components/top_location";
+@import "../../components/post_popular";
+@import "../../components/category";
+@import "../../components/link_footer";
+@import "../../components/whyus";
+@import "../../components/hero";
+
+
+//Include

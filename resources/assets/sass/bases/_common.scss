@@ -1,0 +1,14 @@
+@import "../components/footer/mb_footer";
+@import "../components/footer/mb_sidebar";
+
+.body-mb-active{
+  overflow: hidden;
+}
+
+.star-review {
+  color: #dedede;
+  .checked {
+    color: orange;
+  }
+}
+  

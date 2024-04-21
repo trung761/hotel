@@ -1,0 +1,43 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@import "variables";
+//@import "variables_used";
+// @import "mixins";
+@import "path";
+@import "core";
+// @import "larger";
+// @import "fixed-width";
+// @import "list";
+// @import "bordered-pulled";
+// @import "animated";
+// @import "rotated-flipped";
+// @import "stacked";
+@import "icons";
+//@import "icons_used";
+// @import "screen-reader";
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

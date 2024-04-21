@@ -1,0 +1,64 @@
+#searchbar {
+    // margin-top: 20px;
+    margin-bottom: 10px;
+    .searchform {
+        // background-image: url(https://canthofantasticity.com/wp-content/uploads/2020/02/da-nang-noi-hoi-tu-cua-tiem-nang-du-lich-03.jpg);
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // height: 400px;
+        background-position: center;
+        .search_field {
+            display: flex;
+            // margin-top: 22%;
+            justify-content: space-between;
+            background-color: var(--primary-color);
+            padding: 20px;
+            color: #fff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            .search_field_item {
+                margin-left: 5px;
+                margin-bottom: 0;
+                width: 142px;
+                .search_field_item_label {
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin: 0 0 3px;
+                }
+                .btn_search_box {
+                    background: #ffa80f;
+                    color: #fff;
+                    border: 1px solid #ffa80f;
+                    height: 40px;
+                    border-radius: 3px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #searchbar {
+        .searchform {
+            .search_field {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                display: none;
+                .search_field_item {
+                    width: 100%;
+                    margin-bottom: 5px;
+                    .btn_search_box {
+                        width: 100%;
+                    }
+                    .mb-item-label {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

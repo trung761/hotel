@@ -1,0 +1,72 @@
+.top-location{
+    margin-top: 20px;
+    &__header{
+        margin-bottom: 15px;
+        .page-h1{
+            font-size: 22px;
+            margin: 0 0 5px;
+            font-weight: 600;
+        }
+        .page-description{
+            font-size: 13px;
+        }
+    }
+    &__body{
+        .body-title{
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .location-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap ;
+            .location-item{
+                display: inline-block;
+                width: 325px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
+                margin: 0 10px;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                >img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 450ms ease;
+                }
+                .location-cat {
+                    text-align: center;
+                    padding: 12px 10px;
+                    width: 100%;
+                    height: 100%;
+                    background-color:rgba(0,0,0,0);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: all 450ms ease;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    display: none;
+                    .location-name{
+                        font-weight: 700;
+                    }
+                }
+                &:hover .location-cat {
+                    background-color:rgba(0,0,0, 0.3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                }
+                &:hover >img{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

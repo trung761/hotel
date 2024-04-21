@@ -1,0 +1,389 @@
+.content-detail{
+    //Base
+    display: flex;
+    justify-content: space-between;
+    .content{
+        flex: 0 0 70%;
+        max-width: 70%;
+        width: 70%;
+    }
+    .sidebar{
+        flex-grow: 1;
+        &-right {
+            padding-left: 21px;
+        }
+    }
+    
+    //Style box content detail
+    .b-slide{
+        .card-slide{
+            background: #f5f5f5;
+            position: relative;
+            .slides{
+                width: 80%;
+                margin: auto;
+            }
+            .prev-next{
+                position: absolute;
+                top: 43%;
+                z-index: 10;
+                width: 100%;
+    
+                .owl-style-buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+    
+                    &__btn {
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                        cursor: pointer;
+                        border: none;
+                        background: #fff;
+                        color: #000;
+                        box-shadow: 0 0 7px -4px #000;
+                        > i {
+                            font-size: 25px;
+                        }
+                    }
+                    &__btn--prev {
+                        position: absolute;
+                        left: 0;
+                        i {
+                            margin-left: -3px;
+                        }
+                    }
+                    &__btn--next {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            margin-right: -2px;
+                        }
+                    }
+                }
+            }
+            .chothuenhanh-label{
+                width: 100px;
+                height: 100px;
+                pointer-events: none;
+                background: url('/images/chothuenhanh-label.png') center no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: -9px;
+                left: -9px;
+                z-index: 2;
+            }
+            .post-hot{
+                display: none;
+            }
+            .post-save{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                cursor: pointer;
+                >i{
+                    width: 40px;
+                    height: 40px;
+                    background: url('/images/love.png') center no-repeat;
+                    background-size: 30px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .b-base-info{
+        margin-bottom: 15px;
+        .post-name{
+            margin: 5px 0;
+            .star-review {
+                margin-right: 7px;
+                font-size: 18px;
+                float: left;
+            }
+            >h1{
+                color: #E13427;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .post-cate{
+            color: #777;
+            margin-bottom: 5px;
+            >a{
+                color: #007aff;
+            }
+        }
+        .post-address{
+            margin-bottom: 5px;
+            color: #777;
+        }
+        .post-price{
+            display: flex;
+            .price, .acreage{
+                flex: 0 0 20%;
+                >i{
+                    display: none;
+                }
+            }
+            .price{
+                display: inline-block;
+                font-size: 17px;
+                color: #16c784;
+                font-weight: 700;
+                padding-right: 15px;
+                >span{
+                    display: block;
+                    color: #777;
+                    font-size: 17px;
+                    font-size: 13px;
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                }
+            }
+            .acreage{
+                display: inline-block;
+                font-weight: normal;
+                padding-right: 15px;
+                >span{
+                    display: block;
+                    color: #777;
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .b-description{
+        .content-description{
+            >p{
+                padding: 5px 0;
+            }
+        }
+    }
+    .b-feature, .b-contact{
+        .table-detail{
+            border-collapse: unset;
+            width: 100%;
+            border-spacing: 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            tr{
+                td {
+                    padding: 10px;
+                    .name{
+                        white-space: nowrap;
+                    }
+                    .cl-red{
+                        color: #E13427;
+                    }
+                }
+                &:nth-of-type(even) {
+                    background-color: #f5f5f5;
+                }
+            }
+        }
+    }
+    .b-map{
+        .map-address, .map-description{
+            font-size: 13px;
+        }
+        .map{
+            iframe{
+                width: 100%;
+            }
+        }
+        .btn-report{
+            background: #fff;
+            border-color: #007aff;
+            color: #007aff;
+            border-radius: 5px;
+            border: 1px solid #3961fb;
+            >i{
+                margin-right: 5px;
+            }
+        }
+    }
+    .post-bottom-bar{
+        display: none;
+    }
+
+    .b-author{
+        .author-aside{
+            border: 1px solid #dddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            .author-anhdaidien{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto 10px;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .author-info{
+                .author-name{
+                    font-size: 20px;
+                    font-weight: 700;
+                    display: block;
+                    margin-bottom: 10px;
+                    text-align: center
+                }
+                .btn-phone{
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    width: 100%;
+                    background: #16c784;
+                    border-color: #16c784;
+                    color: #fff;
+                    background: linear-gradient(to right,#16c784,#16c784);
+                    margin-bottom: 10px;
+                }
+                .btn-zalo{
+                    width: 100%;
+                    background: #fff;
+                    border-color: #333;
+                    background: linear-gradient(to right,#fff,#fff);
+                    color: #000;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .content-detail{
+        //basic
+        flex-direction: column;
+        .content{
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 100%;
+        }
+        .sidebar-right {
+            padding-left: 0;
+        }
+
+        //Style box
+        .b-slide{
+            .card-slide{
+                .chothuenhanh-label{
+                    display: none;
+                }
+                .post-hot{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    background: url('/images/hot.svg') center no-repeat;
+                    background-size: 100%;
+                    pointer-events: none;
+                    z-index: 1;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                }
+            }
+        }
+        .b-base-info{
+            border-bottom: 7px solid #f1f1f1;
+            padding-bottom: 10px;
+            .post-price{
+                .mb-price{
+                    display: none !important;
+                }
+                .price, .acreage{
+                    >i{
+                        display: block;
+                    }
+                }
+                .price{
+                    >i{
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        content: "";
+                        background: url('/images/price-icon.svg') center no-repeat;
+                        background-size: contain;
+                        margin-right: 5px;
+                    }
+                }
+                .acreage{
+                    >i{
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        content: "";
+                        background: url('/images/acreage-icon.svg') center no-repeat;
+                        background-size: contain;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .b-description{
+            border-bottom: 7px solid #f1f1f1;
+            padding-bottom: 10px;
+        }
+        .b-feature, .b-contact{
+            border-bottom: 7px solid #f1f1f1;
+            padding-bottom: 20px;
+        }
+        .b-map{
+            border-bottom: 7px solid #f1f1f1;
+            padding-bottom: 20px;
+        }
+        .post-bottom-bar{
+            display: block;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            z-index: 999;
+            display: flex;
+            padding: 2px 3px;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+            .item{
+                display: inline-flex;
+                width: 28%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin: 3px .5%;
+                border-radius: 5px;
+                background-color: #fff;
+                border: 1px solid #999;
+                color: #000;
+                text-decoration: none;
+                font-size: 14px;
+                &.call {
+                    color: #fff;
+                    background-color: #16c784;
+                    border-color: #16c784;
+                    font-weight: 700;
+                    width: 41%;
+                    font-size: 17px;
+                    >i{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

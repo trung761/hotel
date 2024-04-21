@@ -1,0 +1,17 @@
+.#{$la-css-prefix}-ul {
+    padding-left: 0;
+    margin-left: $la-li-width;
+    list-style-type: none;
+    > li { position: relative; }
+}
+
+.#{$la-css-prefix}-li {
+    position: absolute;
+    left: -$la-li-width;
+    width: $la-li-width;
+    top: (2em / 14);
+    text-align: center;
+    &.#{$la-css-prefix}-lg {
+        left: -$la-li-width + (4em / 14);
+    }
+}
