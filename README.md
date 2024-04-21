@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 
+=======
+# hotel
+>>>>>>> origin/main
