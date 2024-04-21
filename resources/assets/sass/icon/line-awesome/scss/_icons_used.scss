@@ -1,0 +1,5 @@
+.#{$la-css-prefix}-search:before { content: la-content($la-search); }
+.#{$la-css-prefix}-plus-circle:before { content: la-content($la-plus-circle); }
+.#{$la-css-prefix}-heart:before { content: la-content($la-heart); }
+.#{$la-css-prefix}-heart-o:before { content: la-content($la-heart-o); }
+.#{$la-css-prefix}-angle-right:before { content: la-content($la-angle-right); }

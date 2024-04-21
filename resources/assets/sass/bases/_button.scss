@@ -1,0 +1,155 @@
+/*Button*/
+a.btn {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 20px;
+    padding: .45rem .95rem;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &-block {
+        width: 100%;
+    }
+
+    &:not(:first-of-type) {
+        margin-left: 5px;
+    }
+
+    &-xs {
+        font-size: 12px;
+        padding: 0.1rem 0.5rem !important;
+    }
+
+    &-sm {
+        font-size: 13px;
+        padding: 0.25rem 0.75rem;
+    }
+
+    &-lg {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+    &-secondary {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    &-not-radius {
+        border-radius: 50px !important;
+    }
+    &-blue {
+        background-color: $blue;
+        color: white;
+    }
+    &-pink {
+        background-color: #fb226a;
+        color: white;
+    }
+    &-gray{
+        background-color: #f6f7f9;
+    }
+    &-primary {
+        color: #fff;
+        background: #4688ff;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.btn-primary-outline {
+    background: #fff;
+    color: #4688ff;
+    border: 2px solid #4688ff;
+}
+
+//Danh sach viec lam
+.btn-border {
+    border: 1px solid #dedede !important;
+    padding: 0 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    display: inline-block;
+
+    &.blue {
+        color: $blue;
+    }
+
+    &.pink {
+        color: #fb226a;
+    }
+
+    &.blocked {
+        pointer-events: none;
+        color: #ccc;
+    }
+}
+
+@each $color, $value in $btn-colors {
+    $btn-bg-c: nth($value, 1); //background
+    $btn-co-c: nth($value, 2); //color
+    $btn-bo-c: nth($value, 3); //color-border
+
+    $btn-bg-h: nth($value, 4); //background
+    $btn-co-h: nth($value, 5); //color
+    $btn-bo-h: nth($value, 6); //color-border
+
+    .#{$color} {
+        background: #{$btn-bg-c};
+        color: #{$btn-co-c} !important;
+        border: 2px solid #{$btn-bo-c};
+
+        &:hover {
+            text-decoration: none;
+            background: #{$btn-bg-h};
+            color: #{$btn-co-h} !important;
+            border: 2px solid #{$btn-bo-h};
+        }
+    }
+}
+
+@each $color, $value in $btn-color-outlines {
+    $color_main: nth($value, 1); //color-main
+    $color_text: nth($value, 2); //color-text
+
+    .#{$color}-outline {
+        background: $white;
+        color: #{$color_main} !important;
+        border: 2px solid #{$color_main} !important;
+
+        &:hover {
+            text-decoration: none;
+            background: #{$color_main};
+            color: #{$color_text} !important;
+        }
+    }
+}
+
+@each $color, $value in $btn-not-hover {
+    $bg: nth($value, 1); //background
+    $color_text: nth($value, 2); //color
+    $border: nth($value, 3); //border
+
+    .#{$color}-nh {
+        background: #{$bg};
+        color: #{$color_text} !important;
+        border: 1px solid #{$border};
+        text-decoration: none !important;
+    }
+}
+

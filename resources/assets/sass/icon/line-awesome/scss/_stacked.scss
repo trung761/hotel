@@ -1,0 +1,19 @@
+.#{$la-css-prefix}-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.#{$la-css-prefix}-stack-1x, .#{$la-css-prefix}-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.#{$la-css-prefix}-stack-1x { line-height: inherit; }
+.#{$la-css-prefix}-stack-2x { font-size: 2em; }
+.#{$la-css-prefix}-inverse { color: $la-inverse; }

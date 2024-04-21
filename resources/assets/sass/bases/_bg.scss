@@ -1,0 +1,68 @@
+$bg-red: #dd4b39;
+$bg-yellow: #f39c12;
+$bg-aqua: #00c0ef;
+$bg-blue: #0073b7;
+$bg-black: #111;
+$bg-light-blue: #3c8dbc;
+$bg-green: #00a65a;
+$bg-gray: #727683;
+$bg-navy: #001F3F;
+$bg-teal: #39CCCC;
+$bg-olive: #3D9970;
+$bg-lime: #01FF70;
+$bg-orange: #FF851B;
+$bg-fuchsia: #F012BE;
+$bg-purple: #605ca8;
+$bg-maroon: #D81B60;
+$bg-pink: #f73859;
+$bg-blues: #3961fb;
+
+$text_whites: (
+    "bg-red",
+    "bg-yellow",
+    "bg-aqua",
+    "bg-blue",
+    "bg-light-blue",
+    "bg-green",
+    "bg-navy",
+    "bg-teal",
+    "bg-olive",
+    "bg-lime",
+    "bg-orange",
+    "bg-fuchsia",
+    "bg-purple",
+    "bg-maroon",
+    "bg-black",
+    "bg-pink",
+    "bg-blues",
+);
+@each $class in $text_whites {
+    .#{$class}{
+        color: #fff;
+    }
+}
+$bg_colors: (
+    "bg-red" : $bg-red,
+    "bg-yellow" : $bg-yellow,
+    "bg-aqua" : $bg-aqua,
+    "bg-blue" : $bg-blue,
+    "bg-black" : $bg-black,
+    "bg-light-blue" : $bg-light-blue,
+    "bg-green" : $bg-green,
+    "bg-gray" : $bg-gray,
+    "bg-navy" : $bg-navy,
+    "bg-teal" : $bg-teal,
+    "bg-olive" : $bg-olive,
+    "bg-lime" : $bg-lime,
+    "bg-orange" : $bg-orange,
+    "bg-fuchsia" : $bg-fuchsia,
+    "bg-purple" : $bg-purple,
+    "bg-maroon" : $bg-maroon,
+    "bg-pink" : $bg-pink,
+    "bg-blues" : $bg-blues,
+);
+@each $name, $color in $bg_colors {
+    .#{$name} {
+        background-color: #{$color};
+    }
+}

@@ -1,0 +1,159 @@
+.mobile-panel{
+    position: fixed;
+    top: 0;
+    // right: 0;
+    right: -100%;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    max-width: 80%;
+    overflow: auto;
+    height: 100%;
+    padding: 0 0 50px;
+    // transition: all .4s;
+    transition: .3s;
+    .inner{
+        .user-control{
+            background-color: #3f51b5;
+            padding: 20px 15px;
+            color: #fff;
+            .user-info{
+                >p{
+                    font-size: 13px;
+                }
+                .btn-login, .btn-register{
+                    color: #000;
+                    background-color: #ffc107;
+                }
+            }
+        }
+        .nav-menu{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            >ul{
+                >li{
+                    >a {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 0;
+                        text-decoration: none;
+                        position: relative;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #007aff;
+                        &:after {
+                            width: 10px;
+                            height: 10px;
+                            background: url('/images/chevron-blue.svg') center no-repeat;
+                            background-size: contain;
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .list-support{
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-top: 1px solid #ddd;
+            color: #000;
+            >img{
+                width: 45px;
+                height: 45px;
+            }
+            .support-items{
+                display: flex;
+                flex-wrap: wrap;
+                .item {
+                    flex: 0 0 50%;
+                    width: 50%;
+                    max-width: 50%;
+                    margin: 10px 0;
+                    color: #000;
+                    .item-title {
+                        color: #ff9800;
+                        font-weight: 700;
+                    }
+                    >a {
+                        display: flex;
+                        align-items: center;
+                        color: #000;
+                        text-decoration: none;
+                        margin: 10px 0;
+                        >i {
+                            margin-right: 5px;
+                            width: 25px;
+                            height: 25px;
+                        }
+                        .phone {
+                            background: url('/images/phone.svg') center no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                        }
+                        .zalo {
+                            background: url('/images/icon_zalo.svg') center no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .version{
+            padding: 15px; 
+            color: #999; 
+            font-size: 13px; 
+            padding-bottom: 0; 
+            margin-bottom: 0;
+        }
+    }
+    &.mobile-panel-active{
+        // display: block !important;
+        right: 0;
+    }
+}
+
+//Style background overlley
+.panel-backdrop {
+    box-sizing: border-box;
+    position: fixed;
+    transform: translate3d(0,0,0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+    background: rgba(0,0,0,.85);
+    &.backdrop-active{
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 400px){
+    .mobile-panel{
+        .inner{
+            .list-support{
+                .support-items{
+                    .item {
+                        flex: 0 0 100%;
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

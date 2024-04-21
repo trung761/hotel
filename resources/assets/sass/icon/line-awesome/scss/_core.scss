@@ -1,0 +1,11 @@
+.#{$la-css-prefix} {
+    display: inline-block;
+    font: normal normal normal #{$la-font-size-base}/#{$la-line-height-base} $la-font-name;
+    font-size: inherit;
+    text-rendering: auto;
+    text-decoration: inherit;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}

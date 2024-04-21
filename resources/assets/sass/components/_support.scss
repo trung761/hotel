@@ -1,0 +1,61 @@
+.b-support{
+    border: 7px dashed #e8eefc;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 50px;
+    .support-content{
+        .support-bg{
+            height: 150px;
+            background: url('/images/support-bg.jpg') center no-repeat;
+            background-size: contain;
+        }
+        .list-support{
+            text-align: center;
+            padding: 0 10px;
+            margin-top: 30px;
+            .list-support-title{
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: #233762;
+            }
+            .supports{
+                display: flex;
+                .support-item{
+                    flex: 1;
+                    margin-bottom: 25px;
+                    .support-item-title{
+                        font-weight: 700;
+                        display: block;
+                        margin-bottom: 10px;
+                        color: #f80;
+                        text-transform: uppercase;
+                    }
+                    >a{
+                        display: block;
+                        color: #233762;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin: 5px 0;
+                    }
+                }
+            }
+            .btn-page-contact{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .b-support{
+        .support-content{
+            .list-support{
+                .supports{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

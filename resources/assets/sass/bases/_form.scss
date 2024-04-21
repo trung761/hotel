@@ -1,0 +1,143 @@
+
+/* Basic styles for button */
+*:focus, input, button, textarea {
+    outline: none !important;
+}
+textarea, input, select {
+    border: 1px solid #dedede;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+textarea {
+    min-height: 100px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+.form-row {
+    display: flex;
+    position: relative;
+    margin-right: -5px;
+    margin-left: -5px;
+    & > [class*=col] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .form-col {
+        padding-right: 5px;
+        padding-left: 5px;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        //&.city {
+        //    flex: 1 1 30%;
+        //    max-width: 30%;
+        //    margin-right: 10px;
+        //}
+        //&.district {
+        //    flex: 1 1 70%;
+        //    max-width: 70%;
+        //}
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+    > label {
+        font-weight: 500;
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #333;
+        a {
+            margin: 0 10px;
+        }
+        > span {
+            color: #FF0000
+        }
+        &.count-down {
+            width: 100%;
+            .count-number {
+                float: right;
+                font-weight: 400;
+                color: #888;
+            }
+        }
+    }
+    .form-control {
+        border-radius: 2px;
+        display: block;
+        font-size: 14px;
+        box-sizing: border-box;
+        padding: 8px;
+        height: 38px;
+        width: 100%;
+        background: #fff;
+    }
+    .intro {
+        color: #888;
+        font-style: italic;
+        font-size: 13px;
+    }
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #f2f2f2;
+    opacity: 0.5;
+}
+.form-control:focus, input[type=text]:focus, input[type=password]:focus {
+    border-color: #999 !important;
+    background-color: #fff;
+    background-image: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .grow{
+        flex-grow: 1;
+    }
+    .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        height: 38px;
+        font-size: 14px;
+        &:not(:first-child) {
+            margin-left: .5rem;
+        }
+    }
+}
+.form-group-icon {
+    position: relative;
+    .item-con {
+        position: absolute;
+        right: 12px;
+        top: 51%;
+        color: #999;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.error-form {
+    font-size: 13px;
+    color: #FF0000;
+}
+//Lọc dữ liệu bảng
+.filter-data{
+    margin-bottom: 15px;
+}
