@@ -74,10 +74,12 @@
         </div>
     </div>
 </footer>
+<div class="chatbot" style="">
+    <df-messenger style ="position:relative; bottom:30%"
+    intent="WELCOME"
+    chat-title="NewAgent"
+    agent-id="97daec96-7d7a-4bcc-a6d9-ed5c7a7df8a0"
+    language-code="vi"
+    ></df-messenger>
+</div>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="NewAgent"
-  agent-id="97daec96-7d7a-4bcc-a6d9-ed5c7a7df8a0"
-  language-code="vi"
-></df-messenger>
